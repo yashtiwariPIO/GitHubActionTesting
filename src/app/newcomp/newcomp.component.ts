@@ -8,7 +8,7 @@ import { AuthenticationService } from '../authentication.service';
   styleUrls: ['./newcomp.component.css']
 })
 export class NewcompComponent implements OnInit {
-  testFormGroup: FormGroup | undefined;
+  testFormGroup!: FormGroup;
   submitted!: boolean;
 
   constructor( private service:AuthenticationService) { this.service.authenticate(); }
