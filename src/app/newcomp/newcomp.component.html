@@ -1,0 +1,21 @@
+<p>newcomp works!</p>
+<button id="incButton" (click) = "countInc()">increase Count</button>
+<button id="decButton" (click) = "countDec()">decrease count</button>
+
+<p id="count">{{count}}</p>
+
+<div>
+ <form [formGroup]="testFormGroup" (submit)="onSubmit()"></form>
+ <label for="">F name:</label>
+<input type="text" formControlName="fname"><br>
+<label for="">L name:</label>
+<input type="text" formControlName="lname"><br>
+<label for="">M number:</label>
+<input type="number" formControlName="mnumber"><br>
+<label for="">Email</label>
+<input type="email" formControlName="email"><br>
+<button type="submit" [disabled]="!testFormGroup.valid">submit</button>
+
+</div>
+
+
